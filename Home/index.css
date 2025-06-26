@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'genty'; /* Give your font a name */
+    src: url('../Fonts/Genty-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'genty sans'; /* Give your font a name */
+    src: url('../Fonts/GentySans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+  --darkPurp: #cc71e6;
+  --lightPurp: #ebb1fc;
+}
+
+#nav-section{
+    margin: 0;
+    font-family: 'genty', sans-serif;
+    position: relative;
+}
+
+#above-nav{
+    height: 100px;
+    background-color: white;
+    z-index: 1;
+}
+
+#logo {
+    position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    height: 140px;
+    z-index: 3;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--darkPurp);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow:       
+        -2px -2px 0 black,
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black,
+        -2px  0px 0 black,
+         2px  0px 0 black,
+         0px -2px 0 black,
+         0px  2px 0 black,
+         0px  0px 3px black;
+    transition: color 0.3s;
+    margin: 100px;
+}
+
+nav li a:hover {
+    color: var(--lightPurp); /* light hover color */
+}
+
+#hero-div{
+    background-image: url("../Photos/1.png");
+    height: 500px;
+}
+#hero-title{
+    font-size: 60px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #logo {
+        height: 100px;
+        top: 10px;
+    }
+
+    nav {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    nav li a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        height: 80px;
+        top: 5px;
+    }
+
+    nav li a {
+        font-size: 0.9rem;
+    }
+
+    #above-nav {
+        height: 80px;
+    }
+}
