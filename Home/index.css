@@ -11,53 +11,62 @@
     font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
 :root {
   --darkPurp: #cc71e6;
   --lightPurp: #ebb1fc;
 }
 
 #nav-section{
-    margin: 0;
     font-family: 'genty', sans-serif;
     position: relative;
 }
 
-#above-nav{
-    height: 100px;
-    background-color: white;
-    z-index: 1;
-}
-
 #logo {
     position: absolute;
-    top: 20px; 
     left: 50%;
+    top: 1px;
     transform: translateX(-50%);
-    height: 140px;
+    height: 105px;
     z-index: 3;
 }
 
 nav {
-    width: 100%;
-    background-color: var(--darkPurp);
-    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 2;
+    gap: 80px;
+    height: 70px;
+    background-color: var(--darkPurp);
+    position: fixed; /* sticky can work too */
+    width: 100%;
+    z-index: 10; /* must be higher than hero */
+}
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 40px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
     position: relative;
     z-index: 2;
 }
@@ -78,7 +87,6 @@ nav li a {
          0px  2px 0 black,
          0px  0px 3px black;
     transition: color 0.3s;
-    margin: 100px;
 }
 
 nav li a:hover {
@@ -87,10 +95,29 @@ nav li a:hover {
 
 #hero-div{
     background-image: url("../Photos/1.png");
-    height: 500px;
+    height: 600px;
+    padding-top: 70px; /* same as nav height */
+    background-size: cover;
+    background-position: center;
 }
 #hero-title{
+    position: absolute;
+    left: 10%;
     font-size: 60px;
+    background-color: white;
+    width: 30%;
+    border-radius: 10px;
+    border: solid black 2px;
+    text-align: center;
+    top: 50%;
+    
+}
+
+#hero-photo {
+    height: 600px;
+    position: absolute;
+    right: 10%;
+    
 }
 
 /* Responsive Adjustments */
@@ -114,6 +141,7 @@ nav li a:hover {
         flex-direction: column;
         gap: 15px;
     }
+
 }
 
 @media (max-width: 480px) {
