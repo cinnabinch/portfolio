@@ -111,7 +111,6 @@ nav li a:hover {
 }
 
 #hero-div{
-    background-image: url("./media/1.png");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,6 +120,7 @@ nav li a:hover {
     padding: 20px;
     height: auto;
     min-height: 600px;
+    background-image: url("./media/1.png");
     background-size: cover;
     background-position: center;
     margin-bottom: 50px;
@@ -132,9 +132,9 @@ nav li a:hover {
 }
 
 #hero-title {
-    width: 40%;
+    width: 300px;
     min-width: 200px;
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: 2.5rem;
     padding: 20px;
     transition: all 0.3s ease;
 }
@@ -142,20 +142,10 @@ nav li a:hover {
 #hero-photo {
     position: relative;
     max-width: 100%;
-    width: 600px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    margin-top: 20px;
     transition: all 0.3s ease;
-}
-
-#hero-photo {
-    position: relative;
-    max-width: 100%;
-    width: 600px;
-    height: 400px;
-    object-fit: cover;
-    margin-top: 20px;
 }
 
 /* Responsive adjustments for hero elements */
@@ -188,21 +178,23 @@ nav li a:hover {
         gap: 20px;
         padding: 20px 15px;
         margin-bottom: 50px;
+        flex-direction: row;
+        justify-content: space-between;
     }
     
     #hero-title {
-        width: 80%;
+        width: 45%;
         min-width: 200px;
         font-size: clamp(1.8rem, 5vw, 2.5rem);
         padding: 12px;
     }
     
     #hero-photo {
-        width: 90%;
-        max-width: 400px;
+        width: 45%;
+        max-width: 300px;
         height: 250px;
         object-fit: contain;
-        margin-top: 20px;
+        margin-top: 0;
     }
 }
 
@@ -212,6 +204,7 @@ nav li a:hover {
         gap: 15px;
         padding: 15px 10px;
         margin-bottom: 50px;
+        flex-direction: column;
     }
     
     #hero-title {
@@ -222,7 +215,7 @@ nav li a:hover {
     }
     
     #hero-photo {
-        width: 95%;
+        width: 30%;
         max-width: 300px;
         height: 200px;
         object-fit: contain;
@@ -266,7 +259,7 @@ nav li a:hover {
     }
     
     #hero-photo {
-        width: 70%;
+        width: 50%;
         max-width: 400px;
         height: 300px;
         object-fit: contain;
@@ -278,6 +271,7 @@ nav li a:hover {
         min-height: 300px;
         gap: 15px;
         padding: 15px 10px;
+        margin-top: 80px;
     }
     
     #hero-title {
@@ -287,7 +281,7 @@ nav li a:hover {
     }
     
     #hero-photo {
-        width: 90%;
+        width: 45%;
         max-width: 300px;
         height: 200px;
         object-fit: contain;
@@ -297,23 +291,24 @@ nav li a:hover {
 /* Adjust hero section for smaller screens */
 @media (max-width: 768px) {
     #hero-div {
-        flex-direction: column;
+        flex-direction: row;
         gap: 20px;
-        padding: 30px 20px;
+        padding: 20px 15px;
+        margin-top: 80px;
     }
     
     #hero-title {
-        width: 80%;
+        width: 45%;
         font-size: clamp(2rem, 6vw, 3rem);
         padding: 15px;
     }
     
     #hero-photo {
-        width: 80%;
-        max-width: 500px;
-        height: auto;
-        position: static;
-        margin: 20px 0;
+        width: 30%;
+        max-width: 300px;
+        height: 300px;
+        object-fit: contain;
+        margin: 0;
     }
 }
 
@@ -321,27 +316,21 @@ nav li a:hover {
 @media (max-width: 480px) {
     #hero-div {
         padding: 20px 10px;
+        margin-top: 80px;
     }
     
     #hero-title {
-        width: 90%;
+        width: 20%;
         font-size: clamp(1.8rem, 7vw, 2.5rem);
         padding: 10px;
     }
     
     #hero-photo {
-        width: 90%;
-        max-width: 300px;
-        margin: 15px 0;
+        width: 30%;
+        max-width: 20%;
     }
 }
 
-/* Add spacing for smaller screens only */
-@media (max-width: 768px) {
-    #hero-div {
-        margin-top: 100px;
-    }
-}
 
 #hero-title{
     position: absolute;
