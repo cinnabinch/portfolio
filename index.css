@@ -111,7 +111,7 @@ nav li a:hover {
 }
 
 #hero-div{
-    background-image: url("Photos/1.png");
+    background-image: url("./media/1.png");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -392,7 +392,7 @@ nav li a:hover {
 }
 
 #home-section{
-    background-image: url("Photos/2.png");
+    background-image: url("./media/2.png");
     margin-top: 50px;
     min-height: 600px;
     width: 100%;
