@@ -409,10 +409,11 @@ nav li a:hover {
     justify-content: center;
     align-items: stretch;
     flex-direction: row;
-    width: 80%;
+    width: 90%;
     gap: 30px;
     padding: 40px 0;
     min-height: 600px;
+    margin: 0 auto;
 }
 
 .aboutme-info{
@@ -429,20 +430,69 @@ nav li a:hover {
 
 .aboutme-headers {
     font-family: 'genty sans', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: black;
     margin-bottom: 20px;
     text-align: left;
     padding: 0 20px;
+    line-height: 1.2;
 }
 
 .aboutme-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6;
     color: black;
     text-align: left;
     padding: 0 20px;
     min-height: 200px;
+}
+
+/* Tablet and Mobile Responsive Styles */
+@media (max-width: 1024px) {
+    #aboutme-div {
+        flex-direction: column;
+        width: 95%;
+        gap: 40px;
+        padding: 30px 0;
+        min-height: auto;
+    }
+
+    .aboutme-info {
+        width: 100%;
+        margin: 20px 0;
+        min-width: auto;
+    }
+
+    .aboutme-headers {
+        font-size: 1.8rem;
+    }
+
+    .aboutme-text {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    #aboutme-div {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .aboutme-info {
+        margin: 15px 0;
+        padding: 25px;
+    }
+
+    .aboutme-headers {
+        font-size: 1.6rem;
+        padding: 0 15px;
+    }
+
+    .aboutme-text {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
 }
 @media (max-width: 768px) {
     #aboutme-text {
