@@ -196,6 +196,12 @@ nav li a:hover {
         object-fit: contain;
         margin-top: 0;
     }
+
+    @media (max-width: 768px) {
+        #hero-photo {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -220,6 +226,7 @@ nav li a:hover {
         height: 200px;
         object-fit: contain;
         margin-top: 15px;
+        display: none;
     }
 }
 
@@ -285,6 +292,7 @@ nav li a:hover {
         max-width: 300px;
         height: 200px;
         object-fit: contain;
+        display: none;
     }
 }
 
@@ -328,6 +336,7 @@ nav li a:hover {
     #hero-photo {
         width: 30%;
         max-width: 20%;
+        display: none;
     }
 }
 
@@ -358,22 +367,6 @@ nav li a:hover {
     width: 100%;
     object-fit: cover;
     z-index: 1;
-}
-
-/* Adjust hero photo positioning on smaller screens */
-@media (max-width: 768px) {
-    #hero-photo {
-        right: 20%;
-        max-width: 400px;
-    }
-}
-
-@media (max-width: 480px) {
-    #hero-photo {
-        right: 30%;
-        max-width: 300px;
-        height: 400px;
-    }
 }
 
 #space{
