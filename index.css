@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'genty';
-    src: url('./fonts/Genty-Regular.ttf') format('truetype');
+    src: url('../fonts/Genty-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'genty sans';
-    src: url('./fonts/GentySans-Regular.ttf') format('truetype');
+    src: url('../fonts/GentySans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -376,7 +376,7 @@ nav li a:hover {
 #home-section{
     background-image: url("./media/2.png");
     margin-top: 50px;
-    min-height: 600px;
+    min-height: 800px;
     width: 100%;
     display: flex;            
     justify-content: center;    
@@ -391,12 +391,12 @@ nav li a:hover {
     justify-content: center;
     align-items: center;
     width: 80%;
-    min-height: 500px;
+    min-height: 800px;
 }
 
 #home-text {
     background-color: white;
-    font-size: 30px;
+    font-size: 25px;
     width: 80%;
     border-radius: 10px;
     border: solid black 2px;
