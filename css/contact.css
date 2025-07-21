@@ -406,6 +406,8 @@ nav li a:hover {
 .contact-container{
     padding-top: 150px;
     padding-bottom: 150px;
+    max-width: 80%;
+    width: 100%;
 }
 
 #contact-desc{
