@@ -354,6 +354,7 @@ nav li a:hover {
     padding: 20px;
     font-size: clamp(2.5rem, 5vw, 4rem);
     line-height: 1.2;
+    box-shadow: 2px 2px 10px black;
 }
 
 #hero-photo {
