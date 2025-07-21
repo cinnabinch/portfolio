@@ -137,6 +137,7 @@ nav li a:hover {
     font-size: 2.5rem;
     padding: 20px;
     transition: all 0.3s ease;
+    font-family: 'genty sans', serif;
 }
 
 #hero-photo {
