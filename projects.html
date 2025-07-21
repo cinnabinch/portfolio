@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abby's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./css/projects.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <section id="nav-section">
+        <nav>
+            <ul class="nav-left">
+                <li><a href="./index.html" class="nav-text text-outline" >Home</a></li>
+                <li><a href="./about-me.html" class="nav-text text-outline">About Me</a></li>
+                <li><a href="./experiences.html" class="nav-text text-outline">Experience</a></li>
+            </ul>
+            <a href="index.html"><img id="logo" href="index.html" src="./media/AW.png" alt="Logo"></a>
+            <ul class="nav-right">
+                <li><a href="./projects.html" class="nav-text text-outline">Projects</a></li>
+                <li><a href="./future.html" class="nav-text text-outline">Future</a></li>
+                <li><a href="./contact.html" class="nav-text text-outline">Contact Me</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="hero-section">
+        <div id="hero-div">
+            <h1 id="hero-title">Projects</h1>
+        </div>
+    </section>
+    <section id="space"></section>
+    <section id="experiences-section">
+        <div id="experiences-div">
+            <div id="wwt-div" class="experiences-info">
+                <h2 class="experiences-headers">...</h2>
+                <p class="experiences-text">WORK IN PROGRESS </p>
+            </div>
+
+            <div id="reslife-div" class="experiences-info">
+                <h2 class="experiences-headers">.</h2>
+                <p class="experiences-text">Lorem ipsum </p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/abigailwilliams2003/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/cinnabinch"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="mailto:abbyxi2003@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+       <p>&copy; <span id="currentYear"></span></p>
+       <script>
+            let date = new Date().getFullYear();
+            document.getElementById("currentYear").textContent = date;
+        </script>
+
+    </footer>
+    
+</body>
+</html>
